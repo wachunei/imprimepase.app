@@ -1,4 +1,3 @@
-import printPass from "./printPass";
 import renderPass from "./renderPass";
 
 function getDataFromURL() {
@@ -15,10 +14,6 @@ function validateData(data) {
   }
 }
 
-function handlePrintButtonClick(data) {
-  printPass();
-}
-
 function renderUI(data) {
   const dataNameElements = document.querySelectorAll(".data-name");
   dataNameElements.forEach((element) => {
@@ -30,7 +25,7 @@ function renderUI(data) {
   loadingSection.classList.add("unloaded");
 
   const printButton = document.querySelector("#print-button");
-  printButton.addEventListener("click", () => handlePrintButtonClick(data));
+  printButton.addEventListener("click", () => window.print());
 }
 
 async function main() {
@@ -41,7 +36,6 @@ async function main() {
   } catch (error) {
     location.href = `/index.html`;
   }
-  console.log(data);
   await renderPass(data);
   renderUI(data);
 }
