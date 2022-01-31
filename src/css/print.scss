@@ -1,0 +1,151 @@
+@media print {
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+  @page {
+    size: letter;
+    margin: 1cm;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    width: unset;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+  section {
+    display: none;
+  }
+
+  #print {
+    display: unset;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-size: 0.5cm;
+
+    .page {
+      display: block;
+      width: 20cm;
+      height: 20cm;
+      page-break-after: always;
+      break-after: always;
+    }
+
+    .card-stage {
+      margin: 1cm;
+      width: 8cm;
+      height: 10cm;
+      border: 0.5mm solid black;
+      box-sizing: unset;
+      font-size: 0.3cm;
+
+      &.bw {
+        filter: grayscale(100%);
+      }
+    }
+    .card {
+      width: 8cm;
+      height: 5cm;
+      background-color: #e7f4e4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      &.revert {
+        transform: rotate(180deg);
+      }
+    }
+
+    .line {
+      display: block;
+    }
+
+    .card--header {
+      width: 7.6cm;
+      height: 1cm;
+      display: flex;
+      // border: 1px solid yellow;
+    }
+
+    .card-header__logo {
+      width: 1cm;
+      height: 1cm;
+      display: flex;
+      // border: 1px solid green;
+    }
+    .card-header__logo__left {
+      width: 41mm;
+      height: 1cm;
+      background-color: #2561a1;
+    }
+    .card-header__logo__right {
+      width: 59mm;
+      height: 1cm;
+      background-color: #dc514d;
+    }
+
+    .card-header__text {
+      flex: 1;
+      margin-left: 2mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-front-content,
+    .card-back-content {
+      background-color: white;
+      width: 7.6cm;
+      border-radius: 0.2cm;
+      padding: 3mm;
+    }
+
+    .card-front-content {
+      height: 3.5cm;
+      display: flex;
+    }
+
+    .card-data {
+      flex: 1;
+      display: flex;
+      margin-right: 2mm;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-data__data-item:not(:last-child) {
+      margin-bottom: 1mm;
+    }
+    .card-data__label {
+      font-weight: bold;
+      font-size: 3mm;
+    }
+
+    .card-qr {
+      flex: none;
+    }
+
+    .card-qr-image {
+      width: 2.9cm;
+      height: 2.9cm;
+    }
+    .card-back-content {
+      height: 4.6cm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-back__item:not(last-child) {
+      margin-bottom: 1mm;
+    }
+    .card-back__title {
+      font-size: 2.5mm;
+    }
+    .card-back__small {
+      font-size: 2mm;
+    }
+  }
+}

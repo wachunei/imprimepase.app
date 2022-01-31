@@ -1,0 +1,26 @@
+{
+  "name": "covid-pass-print",
+  "version": "0.0.1",
+  "description": "Generate a printable covid mobility pass",
+  "author": "Pedro Aste <wachunei@gmail.com>",
+  "license": "MIT",
+  "source": [
+    "src/index.html",
+    "src/pass.html"
+  ],
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "browrserslist": "defaults",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "easyqrcodejs": "^4.4.10",
+    "jsqr": "^1.4.0",
+    "pdfjs-dist": "^2.12.313"
+  }
+}

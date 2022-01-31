@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imprime tu pase de movilidad</title>
+    <meta name="title" content="Imprime tu pase de movilidad" />
+    <meta
+      name="description"
+      content="Transforma el PDF de tu pase de movilidad en una tarjeta que puedes imprimir y plastificar."
+    />
+    <meta property="og:type" content="website" />
+    <!-- <meta property="og:url" content="https://"> -->
+    <meta property="og:title" content="Imprime tu pase de movilidad" />
+    <meta
+      property="og:description"
+      content="Transforma el PDF de tu pase de movilidad en una tarjeta que puedes imprimir y plastificar."
+    />
+    <meta property="og:image" content="./assets/metadata-image.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- <meta property="twitter:url" content="https://metatags.io/"> -->
+    <meta property="twitter:title" content="Imprime tu pase de movilidad" />
+    <meta
+      property="twitter:description"
+      content="Transforma el PDF de tu pase de movilidad en una tarjeta que puedes imprimir y plastificar."
+    />
+    <meta property="twitter:image" content="./assets/metadata-image.png" />
+    <meta property="twitter:creator" content="@wachunei" />
+
+    <title>Imprime tu Pase de Movilidad</title>
+    <script type="module" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.scss" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖨</text></svg>"
+    />
+  </head>
+  <body>
+    <section class="header-icons">
+      <img
+        src="./assets/mobility-pass-paper.svg"
+        width="145"
+        class="document-icon"
+      />
+      <span role="icon" class="arrow-emoji">➡️</span>
+      <img
+        src="./assets/mobility-pass-card.svg"
+        width="130"
+        class="document-icon"
+      />
+    </section>
+    <section>
+      <h1>🖨 Imprime tu pase de movilidad</h1>
+      <p id="description">
+        Sube el PDF de tu pase de movilidad y obtén una versión para imprimir y
+        plastificar
+      </p>
+      <form>
+        <label id="select-button" class="button">
+          <span>📁 Selecciona o arrastra el PDF</span>
+          <input id="file-selector" type="file" accept=".pdf" />
+        </label>
+      </form>
+      <div class="error-alert"></div>
+    </section>
+    <section>
+      <p class="disclaimer">
+        Tu información no es enviada a terceros. Esta aplicación no tiene
+        relación con las entidades sanitarias.
+      </p>
+      <p class="disclaimer">
+        Hecho con ❤️ por Pedro Pablo Aste Kompen -
+        <a href="http://github.com/wachunei">github</a>
+      </p>
+    </section>
+  </body>
+</html>

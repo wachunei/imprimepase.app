@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imprime tu Pase de Movilidad</title>
+    <script type="module" src="./js/pass.js"></script>
+    <link rel="stylesheet" href="./css/index.scss" />
+    <link rel="stylesheet" href="./css/print.scss" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖨</text></svg>"
+    />
+  </head>
+  <body>
+    <section class="loading-section">
+      <span class="loading-emoji">⏳</span>
+    </section>
+    <section class="unloaded slim">
+      <a href="./index.html" class="back-button">👈 Ir al inicio</a>
+    </section>
+    <section class="unloaded centered-section">
+      <img
+        src="./assets/mobility-pass-card.svg"
+        width="200"
+        class="document-icon"
+      />
+    </section>
+    <section class="unloaded">
+      <h1>Listo <span class="data-name"></span>, ya puedes imprimir tu pase</h1>
+      <p class="centered">
+        <button class="button" id="print-button">🖨 Imprimir pase</button>
+      </p>
+
+      <p>
+        🔗 También puedes compartir esta página para descargar tu pase en otro
+        dispositivo, ten en cuenta que contiene la información de tu pase de
+        movilidad.
+      </p>
+    </section>
+    <section class="unloaded">
+      <p class="disclaimer">
+        Tu información no es enviada a terceros. Esta aplicación no tiene
+        relación con las entidades sanitarias.
+      </p>
+      <p class="disclaimer">
+        Hecho con ❤️ por Pedro Pablo Aste Kompen -
+        <a href="http://github.com/wachunei">github</a>
+      </p>
+    </section>
+    <div id="print"></div>
+  </body>
+</html>

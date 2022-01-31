@@ -1,0 +1,125 @@
+@import "./theme.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 520px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+  color: var(--color);
+  background-color: var(--body-bg-color);
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 30px;
+}
+section {
+  margin: 10px 0;
+  background-color: var(--section-bg-color);
+  padding: 18px;
+  border-radius: 6px;
+
+  &.slim {
+    margin: 0;
+    padding: 0 18px;
+  }
+}
+
+.document-icon {
+  box-shadow: rgba(27, 27, 27, 0.2) 0 3px 3px;
+}
+.centered {
+  text-align: center;
+}
+
+.loading-section,
+.centered-section {
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: var(--body-color);
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-emoji {
+  margin: 20px;
+  font-size: 40px;
+}
+.loading-emoji {
+  font-size: 80px;
+}
+
+.unloaded {
+  display: none;
+}
+
+.error-alert {
+  color: var(--error-alert-color);
+  display: none;
+}
+
+#description {
+  font-size: 25px;
+  color: var(--description-color);
+}
+
+#file-selector {
+  display: none;
+}
+
+.button {
+  border: none;
+  color: var(--select-button-color);
+  background-color: var(--select-button-bg-color);
+  display: inline-block;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: unset;
+
+  &:hover,
+  &.dragover {
+    transform: scale(1.1);
+  }
+}
+
+.disclaimer {
+  color: var(--disclaimer-color);
+  font-size: 14px;
+}
+
+a.back-button {
+  text-decoration: none;
+  color: var(--disclaimer-color);
+  font-size: 14px;
+}
+
+#print {
+  display: none;
+}

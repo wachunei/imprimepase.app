@@ -1,0 +1,23 @@
+:root {
+  --section-bg-color: transparent;
+  --select-button-color: white;
+  --select-button-bg-color: #4b4eca;
+  --error-alert-color: #dc514d;
+  --disclaimer-color: #777;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color: rgb(26, 26, 26);
+    --body-bg-color: #fafaff;
+    --description-color: #424244;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #eee;
+    --body-bg-color: #222;
+    --description-color: #ddd;
+  }
+}
