@@ -7,6 +7,7 @@ const PERSONAL_DATA_TOKENS = [
   "N° de Documento / Document ID:",
   "Fecha de Nacimiento / Date of Birth:",
   "Escaneando este QR se verifica el estado del Pase de Movilidad",
+  "Escaneando este QR verifica la autenticidad del Certificado.",
 ];
 
 const VACCINATIONS_TOKENS = ["Esquema:", "Refuerzo:"];
@@ -20,8 +21,10 @@ const VACCINES_TOKENS = [
 const VACCINE_TOKENS = [
   "Fecha de vacunación / Vaccination date:",
   "Vacuna administrada / Vaccine product:",
+  "Vacuna administrada / Vaccine:",
   "Vacunatorio / Vaccination center:",
   "Lote o serie / Lot or series:",
+  "Dra. Cecilia González Caro",
 ];
 
 const finder = (data, substring, { fromIndex = 0, mandatory = false } = {}) => {
