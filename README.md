@@ -1,8 +1,8 @@
 <p align="center">
-    <a href="https://imprimepase.app"><img src="src/assets/metadata-image.png" width="400" /></a>
+    <a href="https://imprimepase.vercel.app"><img src="src/assets/metadata-image.png" width="400" /></a>
 </p>
 
-# [🖨 imprimepase.app](https://imprimepase.app)
+# [🖨 imprimepase.vercel.app](https://imprimepase.vercel.app/) 
 
 Transforma el PDF de tu pase de movilidad en una tarjeta que puedes imprimir y plastificar.
 
